@@ -12,11 +12,11 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="container ml-0 mr-0 pr-0" >
 			<div class="row">
-					<div class="col-md-12" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/Banner-image.jpg'); background-size: cover; background-position: center center; height: 500px;">
-						<div class="siteName">
+					<div class="col-md-12 homeBanner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+<!--						<div class="siteName">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="mainLogo"></div></a>
 						</div>
-
+-->
 						<div class="introText">
 						<?php
 							the_content();

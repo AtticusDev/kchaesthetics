@@ -105,18 +105,16 @@ h1, h2, h3 {
     top: 0;
 }
 
-@media (min-width: 1025px){
-  #site-container:before {
-    min-width: 40px;
-  }
-}
-#site-main {
-  
-}
 
+.homeBanner{
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
 .introText{
   margin-top: 200px;
   margin-left: 50px;
+  width: 50%;
 }
 
 .consultantPanel {
@@ -183,4 +181,34 @@ h1, h2, h3 {
 .largeBtn:hover:after {
   opacity: 1;
   right: 1rem;
+}
+
+
+@media (min-width: 768px){
+  #site-container:before {
+    min-width: 40px;
+  }
+}
+@media (max-width: 768px){
+  #site-container:before {
+    min-width: 20px;
+  }
+  #site-container {
+    padding: 0 0 0 20px;
+  }
+  h1,h2 {
+    font-size: 1.5rem;
+  }
+  .introText{
+    margin-top: 60px;
+    margin-left: 20px;
+    width:60%
+  }
+  .homeBanner{
+    background-size: cover;
+    background-position: 70% 50%;
+    height: 550px;
+  }
+}
+@media (max-width: 576px){
 }

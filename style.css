@@ -6973,13 +6973,15 @@ h1, h2, h3 {
   position: absolute;
   top: 0; }
 
-@media (min-width: 1025px) {
-  #site-container:before {
-    min-width: 40px; } }
+.homeBanner {
+  background-size: cover;
+  background-position: center center;
+  height: 500px; }
 
 .introText {
   margin-top: 200px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  width: 50%; }
 
 .consultantPanel {
   padding: 6rem; }
@@ -7042,6 +7044,26 @@ h1, h2, h3 {
   opacity: 1;
   right: 1rem; }
 
+@media (min-width: 768px) {
+  #site-container:before {
+    min-width: 40px; } }
+
+@media (max-width: 768px) {
+  #site-container:before {
+    min-width: 20px; }
+  #site-container {
+    padding: 0 0 0 20px; }
+  h1, h2 {
+    font-size: 1.5rem; }
+  .introText {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 60%; }
+  .homeBanner {
+    background-size: cover;
+    background-position: 70% 50%;
+    height: 550px; } }
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -7085,19 +7107,37 @@ h1, h2, h3 {
 
 .siteName {
   width: 285px;
-  height: 15px;
-  padding-top: 2rem;
+  height: auto;
+  padding-top: 0rem;
   padding-left: 2rem; }
 
 .mainLogo {
   background-image: url("images/aesthetics-master-logo.svg");
   background-repeat: no-repeat;
-  width: 200px;
-  height: 80px; }
+  width: 150px;
+  height: 100px; }
 
 .navbar-light .navbar-nav .nav-link {
   font-size: 0.8rem;
   color: #182743; }
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  transition: background-color 200ms linear; }
+
+.navbar {
+  padding: 0.5rem;
+  height: auto; }
+
+@media (max-width: 768px) {
+  .mainLogo {
+    background-image: url("images/aesthetics-master-logo.svg");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 80px;
+    margin-left: 3rem; }
+  .navbar {
+    background-color: #ffffff; } }
 
 /*--------------------------------------------------------------
 ## Footer

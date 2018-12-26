@@ -26,7 +26,11 @@
 
 	<header id="site-header" role="banner">
 	    <nav class="navbar navbar-expand-lg navbar-light">
+
 	    	<div class="container">
+		    	<div class="siteName">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="mainLogo"></div></a>
+				</div>
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>

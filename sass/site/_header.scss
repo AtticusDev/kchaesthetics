@@ -3,7 +3,6 @@
 }
 
 #site-header {
-//    color: #0a2343;
     left: 0;
     letter-spacing: .16em;
     position: fixed;
@@ -16,18 +15,38 @@
 
  .siteName{
 	width: 285px;
-	height: 15px;
-	padding-top: 2rem;
+	height: auto;
+	padding-top: 0rem;
     padding-left: 2rem;
 }
 .mainLogo {
 	background-image: url('images/aesthetics-master-logo.svg');
 	background-repeat: no-repeat;
-	width:200px;
-    height: 80px;
+	width:150px;
+    height:100px;
 
 }
 .navbar-light .navbar-nav .nav-link {
     font-size: 0.8rem;
     color: #182743;
+}
+.navbar.scrolled {
+    background-color: #ffffff;
+    transition: background-color 200ms linear;
+}
+.navbar{
+    padding: 0.5rem;
+    height: auto;
+}
+@media (max-width: 768px){
+    .mainLogo {
+        background-image: url('images/aesthetics-master-logo.svg');
+        background-repeat: no-repeat;
+        width:150px;
+        height: 80px;
+        margin-left:3rem;
+    }
+    .navbar {
+        background-color:#ffffff;
+    }
 }
