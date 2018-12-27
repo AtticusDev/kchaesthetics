@@ -10,7 +10,7 @@
 ?>
 <div id="site-container" class="site">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="container ml-0 mr-0 pr-0" >
+		<div class="container ml-0 mr-0" >
 			<div class="row">
 					<div class="col-md-12 homeBanner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 <!--						<div class="siteName">
@@ -27,7 +27,7 @@
 					</div>
 			</div>
 		</div>
-		<div class="container ml-0 mr-0 pr-0">
+		<div class="container ml-0 mr-0">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 consultantPanel">
 					<?php
@@ -39,7 +39,7 @@
 
 			</div>
 		</div>
-		<div class="container ml-0 mr-0 pr-0">
+		<div class="container ml-0 mr-0">
 			<div class="row">
 					<?php if( have_rows('consultant') ): 
 					 while( have_rows('consultant') ): the_row(); 
@@ -60,7 +60,7 @@
 				endif; ?>
 			</div>
 		</div>
-		<div class="container ml-0 mr-0 pr-0">
+		<div class="container ml-0 mr-0">
 			<div class="row">
 				<div class="col-md-12 text-center mt-5">
 					<h2>Our Services</h2>
@@ -87,7 +87,7 @@
 				endif; ?>
 			</div>
 		</div>
-		<div class="container ml-0 mr-0 pr-0">
+		<div class="container newsPanel ml-0 mr-0">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 p-5" style="background-image: url('<?php the_field('news_panel_img') ?>'); background-size: cover; background-position: center center;">
 				</div>
